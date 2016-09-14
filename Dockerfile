@@ -53,7 +53,7 @@ RUN \
 
 # change abc home folder
 RUN \
- usermod -d /config/serviio abc
+ usermod -d /config abc
 
 # add local files
 COPY root/ /
