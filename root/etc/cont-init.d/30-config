@@ -2,11 +2,11 @@
 
 # make folders
 mkdir -p \
-	/config/serviio{/config,/library,/plugins}
+	/config{/config,/library,/plugins}
 
 # copy config
-[[ ! -f /config/serviio/config/application-profiles.xml || ! -f /config/serviio/config/log4j.xml || ! -f /config/serviio/config/profiles.xml ]] && \
-	cp /app/serviio/config/* /config/serviio/config/
+[[ ! -f /config/config/application-profiles.xml || ! -f /config/config/log4j.xml || ! -f /config/config/profiles.xml ]] && \
+	cp /app/serviio/config/* /config/config/
 
 # permissions
 chown -R abc:abc \
